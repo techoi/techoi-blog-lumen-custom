@@ -5,7 +5,7 @@ module.exports = {
   title: 'As long as we dare to dream and do not get in the way of ourseleves, anything is possible',
   subtitle: 'Read, Inspired and Write.',
   copyright: '© 2019 techoi All rights reserved.',
-  disqusShortname: 'techoi',
+  disqusShortname: 'techoi-blog',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-134636751-1',
   menu: [
