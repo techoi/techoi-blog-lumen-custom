@@ -1,6 +1,6 @@
 ---
-title: "기분 좋게 IE 해소하는 가장 좋은 방법"
-date: "2019-06-20T20:53:56.738Z"
+title: "기분 좋게 IE 이슈를 해소하는 방법"
+date: "2019-06-18T20:53:56.738Z"
 template: "post"
 draft: false
 slug: "/posts/ie-style-issue-solve-with-react-hooks"
