@@ -1,5 +1,5 @@
 ---
-title: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소"
+title: "기분 좋게 IE 해소하는 가장 좋은 방법"
 date: "2019-06-20T20:53:56.738Z"
 template: "post"
 draft: false
@@ -10,11 +10,11 @@ tags:
   - "IE"
   - "React"
   - "React Hooks"
-description: "기분 좋게 IE 해소하는 가장 좋은 방법"
+description: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소"
 ---
 
 
-### 리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기
+### 리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소
 
 ---
 
