@@ -1,5 +1,5 @@
 ---
-title: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기"
+title: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소"
 date: "2019-06-20T20:53:56.738Z"
 template: "post"
 draft: false
@@ -10,7 +10,7 @@ tags:
   - "IE"
   - "React"
   - "React Hooks"
-description: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 해소하기"
+description: "기분 좋게 IE 해소하는 가장 좋은 방법"
 ---
 
 
@@ -125,8 +125,8 @@ const CheckCategory: React.SFC<Props> = () => {
     )
 ```
 
-```css
-/* sass 파일 */
+```scss
+/* scss 파일 */
 .parent {
   max-height: 70%;
 }
