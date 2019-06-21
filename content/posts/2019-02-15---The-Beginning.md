@@ -24,7 +24,7 @@ description: "Gatsby로 새로운 블로그를 시작했다. github.io"
 3. github.io를 써보고 싶다.
 
 
-> 여러가지 선택지들이 있었지만, jekyll hexo, gatsby 정도를 후보군에 두고 고민하다가.... 
+> 여러가지 선택지들이 있었지만, `jekyll` `hexo` `gatsby` 정도를 후보군에 두고 고민하다가.... 
 
 (결국에는 gatsby로 선택 뭔가 헤어 왁스 느낌이 나는 이름이지만)
 

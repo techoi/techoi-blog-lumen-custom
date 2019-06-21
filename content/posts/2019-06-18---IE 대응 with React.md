@@ -26,7 +26,7 @@ description: "리액트 훅스로 IE에서 발생하는 overflow scroll 이슈 �
 이슈는 다음과 같다.
 Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있다.
 
-![모달 레이아웃](/images/2019-06-20/popup-layout.png)
+![모달 레이아웃](/images/2019-06-18/popup-layout.png)
 
 위의 형태의 레이아웃을 만들기 위해서 Chrome류에서는
 부모 component에  max-height를 주고,
@@ -76,8 +76,8 @@ Chrome 류에서는 max-height만 가지고 overflow를 쉽게 관리할 수 있
 
 모달 컴포넌트는 담기는 내용이 통신 결과에 따라 변경되는 구조이기에 빅 사이즈 경우와 작은 사이즈 경우가 있다.
 
-![빅 사이즈 모달](/images/2019-06-20/big-size-popup.png)
-![스몰 사이즈 모달](/images/2019-06-20/small-size-popup.png)
+![빅 사이즈 모달](/images/2019-06-18/big-size-popup.png)
+![스몰 사이즈 모달](/images/2019-06-18/small-size-popup.png)
 
 
 목표는 부모 component의 height를 자식(스크롤을 달고 싶은) component의 height에 따라 동적으로 설정하는 것!
