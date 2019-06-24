@@ -2,7 +2,7 @@
 title: First Draft
 date: "2019-02-16T01:45:32.169Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/first-draft"
 category: "Design Culture"
 tags:

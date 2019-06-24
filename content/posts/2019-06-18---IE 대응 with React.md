@@ -108,7 +108,8 @@ const CheckCategory: React.SFC<Props> = () => {
 
     useEffect(() => {
         if(popupWrapper.current) {
-          popupWrapper.current.style.height = popupBox.current && popupBox.current.clientHeight + 120 + 'px';
+          // popupWrapper.current.style.height = popupBox.current && popupBox.current.clientHeight + 120 + 'px'; // 코드 수정
+          popupWrapper.current.style.height = popupBox.current && popupBox.current.style.height && popupBox.current.style.height + 120 + 'px';
         }
     });
 
@@ -124,6 +125,9 @@ const CheckCategory: React.SFC<Props> = () => {
       </div>
     )
 ```
+
+> <span style="color:#ffa8df" > **코드 수정**</span> : clientHeight의 경우 checkbox 요소의 checked 여부에 따라 들쑥날쑥한 현상이 발생 
+`clientHeight`를 `style.height`로 변경
 
 ```scss
 /* scss 파일 */
