@@ -7,7 +7,7 @@ module.exports = {
   copyright: '© 2019 techoi All rights reserved.',
   disqusShortname: 'techoi-blog',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-134636751-1',
+  googleAnalyticsId: 'UA-143156696-1',
   menu: [
     {
       label: 'Posts',

@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "setting": "git clone https://github.com/techoi/techoi.github.io.git public && cd public && git remote add blog https://github.com/techoi/techoi.github.io.git",
-    "develop": "yarn run clean && gatsby develop",
+    "dev": "yarn run clean && gatsby develop",
     "setbuild": "rm -rf public && git clone https://github.com/techoi/techoi.github.io.git public && cd public && git remote add blog https://github.com/techoi/techoi.github.io.git && cd .. && gatsby build && cd public && git add . && git commit -m 'publish post' && git push blog master && cd .. && rm -rf public",
     "build": "gatsby build && cd public && git add . && git commit -m 'publish post' && git push blog master",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",

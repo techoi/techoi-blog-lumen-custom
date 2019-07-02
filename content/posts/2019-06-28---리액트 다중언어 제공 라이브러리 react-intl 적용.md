@@ -49,60 +49,75 @@ Next.js 에서의 설정 방식과 좀 더 나은 번역데이터 활용을 위�
 > ####Next.js React-intl 적용하기
 
 1. Next.js 프로젝트 생성(이미 되있다고 가정)
+
 2. [Next.js react-intl 세팅](https://github.com/soulmachine/nextjs-starter-kit#step4-react-intl) 따라하기
-  - 패키지 설치
+  
+    - 패키지 설치
+
     ```bash
       $ npm install react-intl intl accepts glob
     ```
-  - `server.js` 에 accept Language에 따라서 번역파일 읽도록 설정
-  - `_document.js` 에 모든 페이지에 localeDataScript 주입해주도록 설정
-  - HOC 만들기 IntlProvider로 component 감싸기(Hooks를 이용해서 HOC를 대체할 수도 있음)
+
+    - `server.js` 에 accept Language에 따라서 번역파일 읽도록 설정
+
+    - `_document.js` 에 모든 페이지에 localeDataScript 주입해주도록 설정
+
+    - HOC 만들기 IntlProvider로 component 감싸기(Hooks를 이용해서 HOC를 대체할 수도 있음)
+
 3. 실제 사용 방법
-  - ./lang 폴더에 en.json, ko.json, ja.json 등 accept Language에 맞춰 번역 파일들을 넣어둔다.
+
+    - ./lang 폴더에 en.json, ko.json, ja.json 등 accept Language에 맞춰 번역 파일들을 넣어둔다. 
+    - 각 컴포넌트를 Hoc로 감싸서 export 해주면 사용이 가능함
+
   ```json
   {
     "description": "An example app integrating React Intl with Next.js",
     "greeting": "Hello, World!",
   }
   ```
-  - 각 컴포넌트를 Hoc로 감싸서 export 해주면 사용이 가능한데
-    1. Component 자체로 번역 문구를 사용하고 싶을때,
-      FormattedMessage 컴포넌트에 id를 주면 됨
-      ```jsx
-        import { FormattedMessage } from 'react-intl'
+  
 
-        <FormattedMessage id="greeting"/>
-      ```
-    2. 컴포넌트가 아니라 그냥 문구만 사용하고 싶을때,
-      props로 intl 객체를 받아서 사용하면 됨
-      ```jsx
-        import React, { Component } from 'react'
-        import { injectIntl } from 'react-intl'
+  * Component 자체로 번역 문구를 사용하고 싶을때: FormattedMessage 컴포넌트에 id를 주면 됨
 
-        class JoinForm extends Component {
-          render() {
-            const { intl } = this.props
+  ```jsx
+      import { FormattedMessage } from 'react-intl'
 
-            return (
-              <form>
-                <input
-                  type="text"
-                  name="id"
-                  placeholder={
-                    intl.formatMessage({
-                      id: 'greeting'
-                    })
-                  }
-                />
-              </form>
-            )
-          }
-        }
+      <FormattedMessage id="greeting"/>
+  ```
+      
+  
+  * 컴포넌트가 아니라 그냥 문구만 사용하고 싶을때: props로 intl 객체를 받아서 사용하면 됨
 
-        export default injectIntl(JoinForm)
-      ```
 
-  4. 꿀팁(번역파일 관리와 id를 통한 호출을 직관적으로 바꾸기)
+  ```jsx
+    import React, { Component } from 'react'
+    import { injectIntl } from 'react-intl'
+
+    class JoinForm extends Component {
+      render() {
+        const { intl } = this.props
+
+        return (
+          <form>
+            <input
+              type="text"
+              name="id"
+              placeholder={
+                intl.formatMessage({
+                  id: 'greeting'
+                })
+              }
+            />
+          </form>
+        )
+      }
+    }
+
+    export default injectIntl(JoinForm)
+  ```
+
+4. 꿀팁(번역파일 관리와 id를 통한 호출을 직관적으로 바꾸기)
+
     - AS-IS
 
     en.json
